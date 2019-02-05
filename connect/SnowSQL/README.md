@@ -7,27 +7,33 @@
 *Sample Configuration File*
 
 [connections]
-\# *WARNING* *WARNING* *WARNING* *WARNING* *WARNING* *WARNING*
- #
- # The Snowflake user password is stored in plain text in this file.
- # Pay special attention to the management of this file.
- # Thank you.
- #
- # *WARNING* *WARNING* *WARNING* *WARNING* *WARNING* *WARNING*
 
- #If a connection doesn't specify a value, it will default to these
- #
+\# *WARNING* *WARNING* *WARNING* *WARNING* *WARNING* *WARNING*
+\#
+\# The Snowflake user password is stored in plain text in this file.
+\# Pay special attention to the management of this file.
+\# Thank you.
+\#
+\# *WARNING* *WARNING* *WARNING* *WARNING* *WARNING* *WARNING*
+
+\#If a connection doesn't specify a value, it will default to these
+\#
  accountname = myAccountName
- # region is the name between the accountname and "snowflakecomputing.com"
- #region = 
+\# region is the name between the accountname and "snowflakecomputing.com"
+\#region = 
  username = userName
  password = passWord
- #dbname = defaultdbname
- #schemaname = defaultschema
- #warehousename = defaultwarehouse
- #rolename = defaultrolename
- #proxy_host = defaultproxyhost
- #proxy_port = defaultproxyport
+\#dbname = defaultdbname
+
+\#schemaname = defaultschema
+
+\#warehousename = defaultwarehouse
+
+\#rolename = defaultrolename
+
+\#proxy_host = defaultproxyhost
+
+\#proxy_port = defaultproxyport
 
 With this config file properly filled out, it is then possible to connect using: snowsql 
 
