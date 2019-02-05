@@ -5,8 +5,9 @@
 	* Configure the SnowSQL config file (optional).  It is important to **note** here that **the password is stored in a clear text file**.  It is the **responsibility of the user** to ensure that **proper protections** are taken to **prevent unauthorized access** to the file and its contents.
 
 *Sample Configuration File*
+
 [connections]
- # *WARNING* *WARNING* *WARNING* *WARNING* *WARNING* *WARNING*
+\# *WARNING* *WARNING* *WARNING* *WARNING* *WARNING* *WARNING*
  #
  # The Snowflake user password is stored in plain text in this file.
  # Pay special attention to the management of this file.
