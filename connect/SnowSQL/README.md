@@ -34,8 +34,30 @@ password = ChangeMeToYourPassword
 #proxy_port = defaultproxyport
 ```
 
+It is also possible to have named connections.  Named connections are enclosed by [] and are named connections.name.  For example:
+```
+[connections.example]
+#Can be used in SnowSql as #connect example
 
-With this config file properly filled out, it is then possible to connect using: snowsql 
+accountname = accountname
+username = username
+password = password1234
+
+```
+
+Further customization of this configuration file will be discussed later.
+
+
+With this config file properly filled out, it is then possible to connect using:
+
+```
+snowsql 
+```
+
+or connect to a specific named connection using
+```
+snowsql -c example
+```
 
 	* Configure the SnowSQL command line (optional).  This method uses the command line switches to configure SnowSQL.  This option maybe optimal when using SnowSQL in a non-development mode.  For example, the necessary configuration values can be stored in kubernetes secrets or another configuration solution such as etcd.
 
