@@ -59,5 +59,5 @@ snowsql -c example
 
 * Configure the SnowSQL command line (optional).  This method uses the command line switches to configure SnowSQL.  This option maybe optimal when using SnowSQL in a non-development mode.  For example, the necessary configuration values can be stored in kubernetes secrets or another configuration solution such as etcd.
 
-3. 
+3. Test out the connection
 
