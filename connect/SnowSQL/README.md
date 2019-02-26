@@ -61,3 +61,37 @@ snowsql -c example
 
 3. Test out the connection
 
+
+That's great - we have a working configuration file, but what about if I don't
+want to have to store a clear text password, or deal with required MFA?  
+
+1.  Create an encrypted key pair
+```
+openssl genrsa 2048 | openssl pkcs8 -topk8 -inform PEM -out rsa_key.p8
+```
+Make sure to use a passphrase when prompted, and to record the passphrase in a secure location!
+
+2.  Make a single long string out of the public key.  For example, if the key looks like this:
+```
+-----BEGIN PUBLIC KEY-----
+MIIBIjAAAAAAAAAAAABBBBBBBBBCCCCCCCCCCCCDDDDDDDDDDDEEEEEEEEEEEEEE
+FFFFFFFFFFFFFFFFGGGGGGGGGGGGGGGGGGGGGHHHHHHHHHHHHHHHIIIIIIIIIIII
+JJJJJJJJJJJJJJJJJJJJJJJJJJJJKLLLLLLLLLLLLLLLLLLLMMMMMMMMMMMMMMMM
+PBe2UQSPFhnfprGc/oxj+BpHARg7hGd+NcYSDkmGgcGz3434bVtAejXVCOj9JaQd
+JJJJJJJJJJJJJJJJJJJJJJJJJJJJKLLLLLLLLLLLLLLLLLLLMMMMMMMMMMMMMMMM
+kKK7P6i/uYh+BWqjhWqv/foN6dE1fb3IsBB2+lFNe3VgHahVkzknwx0gEBerqF3f
+ZZZZZZZZ
+-----END PUBLIC KEY-----
+```
+Then the long string would be:
+```
+MIIBIjAAAAAAAAAAAABBBBBBBBBCCCCCCCCCCCCDDDDDDDDDDDEEEEEEEEEEEEEEFFFFFFFFFFFFFFFFGGGGGGGGGGGGGGGGGGGGGHHHHHHHHHHHHHHHIIIIIIIIIIIIJJJJJJJJJJJJJJJJJJJJJJJJJJJJKLLLLLLLLLLLLLLLLLLLMMMMMMMMMMMMMMMMPBe2UQSPFhnfprGc/oxj+BpHARg7hGd+NcYSDkmGgcGz3434bVtAejXVCOj9JaQdJJJJJJJJJJJJJJJJJJJJJJJJJJJJKLLLLLLLLLLLLLLLLLLLMMMMMMMMMMMMMMMMkKK7P6i/uYh+BWqjhWqv/foN6dE1fb3IsBB2+lFNe3VgHahVkzknwx0gEBerqF3fZZZZZZZZ
+```
+
+3.  Use this long string to ALTER the user.  For example,
+```
+ALTER USER nate SET rsa_public_key='MIIBjAAAAAAA...ZZZZ';
+```
+
+4. Connect to Snowflake
+There
