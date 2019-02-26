@@ -24,4 +24,3 @@ clone sourcedb at ( TIMESTAMP => myTimestamp );
 
 
 
-A database can be created from a clone of another database.
