@@ -94,4 +94,16 @@ ALTER USER nate SET rsa_public_key='MIIBjAAAAAAA...ZZZZ';
 ```
 
 4. Connect to Snowflake
-There
+
+There are two ways to use the key pair:
+* add the **private_key_path** to the connection settings that were created above.  The syntax for adding the key path is:
+```
+private_key_path = <path>/<file>.p8
+```
+* use the command line flag **--private-key-path**
+```
+snowsql -a account -u user --private-key-path <path>/<file>.p8
+```
+
+Either option will cause snowsql to prompt for the passphrase unless the environment variable **SNOWSQL_PRIVATE_KEY_PASSPHRASE** is set to the passphrase used to encrypte the file.
+
