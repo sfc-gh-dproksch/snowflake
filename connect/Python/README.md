@@ -29,7 +29,7 @@ pip install --upgrade snowflake-connector-python
 Pip will install the Snowflake connector **and** a boatload of dependencies.  The installation took less than two minutes.
 
 4.  Validate the installation was successfull.
-Execute the script __validate.py__.  Be mindful to change the values in the script to reflect the values needed to connect to your Snowflake account.
+Execute the script __validate.py__.  Be mindful to change the values in the script to reflect the values needed to connect to your Snowflake account.  The value for the account is to the left of "snowflakecomputing.com".
     - user
     - password
     - account
@@ -39,6 +39,16 @@ Execute the script __validate.py__.  Be mindful to change the values in the scri
 ```
 
 ## Connect a Python script to Snowflake
-The sample script, connect.py
+The sample script, [connect.py](https://github.com/davidproksch/snowflake/blob/master/connect/Python/connect.py), is an example of how to create a connection context.  
+
+Set the environment variables
+    - SNOWFLAKE_USER
+    - SNOWFLAKE_PASSWORD
+    - SNOWFLAKE_ACCOUNT
+
+```
+./connect.py
+Connection Successful!
+```
 
 ## Query Snowflake via Python

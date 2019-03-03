@@ -42,6 +42,7 @@ ctx = snowflake.connector.connect(
     account=sf_account
     )
 
+print("Connection Successful!")
 
 #
 # Close the connection
