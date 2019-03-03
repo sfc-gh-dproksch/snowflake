@@ -2,6 +2,7 @@
 import os
 import snowflake.connector
 
+
 #
 # Setup the necessary variables
 #
@@ -42,7 +43,8 @@ ctx = snowflake.connector.connect(
     account=sf_account
     )
 
-print("Connection Successful!")
+if __name__ == "__main__":
+    print("Connection Successful!")
 
 #
 # Close the connection
@@ -50,4 +52,5 @@ print("Connection Successful!")
 # Leave commented out if this is to be imported into another module
 # As a library
 #
-#ctx.close()
+if __name__ == "__main__":
+    ctx.close()
