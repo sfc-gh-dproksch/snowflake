@@ -38,7 +38,7 @@ Execute the script __validate.py__.  Be mindful to change the values in the scri
 3.15.2
 ```
 
-
 ## Connect a Python script to Snowflake
+The sample script, connect.py
 
 ## Query Snowflake via Python
