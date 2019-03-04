@@ -52,3 +52,4 @@ Connection Successful!
 ```
 
 ## Query Snowflake via Python
+The sample script, [query.py](https://github.com/davidproksch/snowflake/blob/master/connect/Python/query.py), is an example of how to create a connection context, create a cursor object, set a warehouse and execute a query.
