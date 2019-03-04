@@ -5,6 +5,10 @@ Snowflake uses the COPY command to load data into the Snowflake service.  COPY c
 ## COPY from an internal stage
 
 1.  Create an internal stage
+```
+CREATE OR REPLACE STAGE demo_stage FILE_FORMAT = (
+);
+```
 2.  PUT the file into the internal stage
 3.  CREATE the target table
 4.  COPY the file into the target table
