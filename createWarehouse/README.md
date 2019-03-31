@@ -11,3 +11,7 @@ Virtual Warehouses are where the computing magic happens.  Warehouses come in th
 * XXXLARGE - 3X Large (64 nodes)
 * X4LARGE  - 4X Large (128 nodes)
 
+The syntax for creating a warehouse is:
+```
+CREATE WAREHOUSE ff WITH WAREHOUSE_SIZE = 'X4LARGE' WAREHOUSE_TYPE = 'STANDARD' AUTO_SUSPEND = 600 AUTO_RESUME = TRUE MIN_CLUSTER_COUNT = 1 MAX_CLUSTER_COUNT = 2 SCALING_POLICY = 'STANDARD';
+```
