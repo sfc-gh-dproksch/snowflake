@@ -1,6 +1,6 @@
 # Create a Snowflake Warehouse
 
-Virtual Warehouses are where the computing magic happens.  Warehouses are also billed **by the second** after the first minute.  Warehouses are also almost instantly scalable **UP** and **DOWN** with an ALTER WAREHOUSE command.
+Virtual Warehouses are where the computing magic happens.  Warehouses are also billed **by the second** after the first minute.  Warehouses are also almost instantly scalable **UP** and **DOWN** with an [ALTER WAREHOUSE](https://docs.snowflake.net/manuals/sql-reference/sql/alter-warehouse.html) command.
 
 Warehouses come in the following sizes:
 
