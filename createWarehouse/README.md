@@ -27,5 +27,5 @@ Breaking down the syntax:
 * <size> - This is the initial size of your warehouse.  The sizes are listed above.  The number of nodes is also the number of credits per hour that each sized cluster will consume.
 * <suspend time> - this is the amount of idle time that will elapse before the warehouse is suspended.  This allows the warehouse to go into suspend mode and billing is halted.
 * AUTO_RESUME - Select TRUE if you want the warehouse to automatically come back online when a user connects and issues an SQL command that requires compute resources to process.  Select FALSE if you want to have to start the warehouse manually.
-* <min>, <max> - These two parameters govern the use of the [Multi-Cluster Warehouse feature](https://docs.snowflake.net/manuals/user-guide/warehouses-multicluster.html).  <min> is the minimum number of clusters which will be started to service users requests.  <max> is the maximum number of clusters which can be used to service user requests in time of heavy load.
+* \<min\>, \<max\> - These two parameters govern the use of the [Multi-Cluster Warehouse feature](https://docs.snowflake.net/manuals/user-guide/warehouses-multicluster.html).  <min> is the minimum number of clusters which will be started to service users requests.  <max> is the maximum number of clusters which can be used to service user requests in time of heavy load.
  
