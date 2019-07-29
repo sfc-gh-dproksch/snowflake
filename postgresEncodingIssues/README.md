@@ -54,4 +54,10 @@ The following modifications will are necessary:
 
 Obviously, any other modifications, such as the name of the generated VIEW, is at the user's discretion.
 
-h/t to Dan Dowdy for the nice convert string.
+*Note:*  This workaround was developed|tested with:
+1.  Postgres 9.6 docker pull postgres:9.6
+1.  postgresql-42.2.6.jar JDBC Driver
+1.  OpenJDK 8u222b10 - Linux x86
+
+
+h/t to *Dan Dowdy* for the nice convert string.
