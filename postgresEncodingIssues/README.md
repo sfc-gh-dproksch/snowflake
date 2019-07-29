@@ -50,3 +50,8 @@ Finding every offending column in the database can be an arduous task, given the
 The following modifications will are necessary:
 -  The connection string will need to reflect the database(s) being run against
 -  The SQL for *distinctSchemaTable* will need a different *table_catalog* and *table_name* predicate values.  Perhaps even a *table_schema* predicate will need to be added. 
+-  The SQL for *sqlStmt* will need to have the predicate values for *table_catalog*changed.
+
+Obviously, any other modifications, such as the name of the generated VIEW, is at the user's discretion.
+
+h/t to Dan Dowdy for the nice convert string.
