@@ -23,5 +23,20 @@ insert into t values (3,'Copyright: ' || chr(169) || '<--' ,-3);
 insert into t values (4,'Registered: ' || chr(174) || '<--' ,-4);
 
 select * from t;
+
+ f1 |                                                  f2                        
+                          | f3 
+----+----------------------------------------------------------------------------
+--------------------------+----
+  4 | Registered: ?<--                                                            
+                         | -4
+  3 | Copyright: ?<--                                                             
+                         | -3
+  2 | Curly Brace: {<--                                                          
+                          | -2
+  1 | Regular String Text.                                                       
+                          | -1
+(4 rows)
+
 ```
 ## Potential Workaround
