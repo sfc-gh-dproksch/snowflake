@@ -44,3 +44,8 @@ A potential workaround is to convert the sql_ascii encoding to latin-1, then to 
 ```
 convert_from(convert(convert_to(columnName,'sql_ascii'), 'latin-1', 'utf-8'), 'utf-8')  as columnName
 ```
+
+Finding every offending column in the database can be an arduous task, given the number of tables and columns per table.  The Java application, Encoding.java, was developed as a sample way to quickly generate a VIEW for every table and to convert all columns that are CHAR, VARCHAR, and TEXT from SQL_ASCII to UTF-8.
+
+The following modifications will are necessary:
+- The SQL for *distinctSchemaTable* will need to be modified 
