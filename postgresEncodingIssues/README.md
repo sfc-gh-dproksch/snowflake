@@ -40,3 +40,7 @@ select * from t;
 
 ```
 ## Potential Workaround
+A potential workaround is to convert the sql_ascii encoding to latin-1, then to UTF-8.  The syntax looks like:
+```
+convert_from(convert(convert_to(columnName,'sql_ascii'), 'latin-1', 'utf-8'), 'utf-8')  as columnName
+```
