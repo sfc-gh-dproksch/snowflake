@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "/Users/dproksch/work/customer/sn/sn-project/DBHammer"
+		}
+	],
+	"settings": {
+		"java.configuration.updateBuildConfiguration": "automatic",
+		"files.exclude": {
+			"**/.classpath": true,
+			"**/.project": true,
+			"**/.settings": true,
+			"**/.factorypath": true
+		}
+	}
+}
