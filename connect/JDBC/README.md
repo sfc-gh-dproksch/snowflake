@@ -1,6 +1,6 @@
 # Connecting to Snowflake Using JDBC
 
-Snowflake provides extensive (documentation)[https://www.snowflake.com/blog/building-a-type-2-slowly-changing-dimension-in-snowflake-using-streams-and-tasks-part-1/] on connecting via JDBC.
+Snowflake provides extensive [documentation](https://docs.snowflake.net/manuals/user-guide/jdbc.html) on connecting via JDBC.
 
 There are several pre-reqs that must be met:
 -  64 bit O/S 
