@@ -10,6 +10,6 @@ There are several pre-reqs that must be met:
 The JDBC Driver class is net.snowflake.client.jdbc.SnowflakeDriver.  
 
 The Connection string is jdbc:snowflake://<account>.snowflakecomputing.com where <account> encompasses the account name + region + cloud provider.  For example:
--  AWS US West:  jdbc\:snowflake://myaccount.snowflakecomputing.com
--  AWS US East:  jdbc:snowflake://myaccount.us-east-1.snowflakecomputing.com
--  Azure US East: jdbc:snowflake://myaccount.east-us-2.azure.snowflakecomputing.com 
+-  AWS US West:  ```jdbc:snowflake://myaccount.snowflakecomputing.com```
+-  AWS US East:  ```jdbc:snowflake://myaccount.us-east-1.snowflakecomputing.com```
+-  Azure US East: ```jdbc:snowflake://myaccount.east-us-2.azure.snowflakecomputing.com ```
