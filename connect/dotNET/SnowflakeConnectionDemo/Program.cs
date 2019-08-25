@@ -20,7 +20,6 @@ namespace SnowflakeConnectionDemo
             string wh = Environment.GetEnvironmentVariable("SF_WAREHOUSE");
             String connString = $"ACCOUNT={account};USER={user};PASSWORD={pswd};DB={db};SCHEMA={schema};WAREHOUSE={wh}";
 
-//DB={db};WAREHOUSE={wh}";
 
 			using (IDbConnection conn = new SnowflakeDbConnection())
             {
