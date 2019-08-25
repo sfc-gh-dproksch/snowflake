@@ -1,9 +1,6 @@
-# Connecting to Snowflake
-Connect to Snowflake using
-* SnowSQL -> Snowflake CLI 
-* JDBC
-* ODBC
-* Python
-* Node
-* Go
-* .NET (maybe)
+# Connect to Snowflake using .NET (maybe)
+
+1.  Add the Snowflake data package to your project
+```
+dotnet add package Snowflake.Data
+```
