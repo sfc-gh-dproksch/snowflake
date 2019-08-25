@@ -1,4 +1,4 @@
-# Connect to Snowflake using .NET (maybe)
+# Connect to Snowflake using .NET
 
 1.  Add the Snowflake data package to your project
 ```
