@@ -1,0 +1,24 @@
+# 
+# 1. Copy this to a .env file
+# 2. Change the values to reflect
+#    your account|environment
+#
+# Required Parameters
+#
+export SF_ACCOUNT=myAccount
+export SF_USER=myUserName
+
+#
+# Depends Parameters
+#
+export SF_PASSWORD=myPassword
+
+#
+# Optional Parameters
+#
+export SF_DB=myDatabase
+export SF_ROLE=myRole
+export SF_SCHEMA=mySchema
+export SF_WAREHOUSE=myWarehouse
+export SF_CONNECTION_TIMEOUT=myTimeout
+export SF_AUTHENTICATOR=myAuthenticator
