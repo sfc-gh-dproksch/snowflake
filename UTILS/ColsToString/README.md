@@ -1,4 +1,4 @@
-* Cols 2 String
+** Cols 2 String
 
 Aids in debugging of the ingestion data when the width of VARCHAR, NUMBER(n,m), or other data quality issues arise.
 
